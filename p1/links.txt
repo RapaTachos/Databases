@@ -1,0 +1,13 @@
+https://stackoverflow.com/questions/5005388/cannot-add-or-update-a-child-row-a-foreign-key-constraint-fails
+
+https://lists.mysql.com/mysql/73593
+
+CREATE TABLE IF NOT EXISTS MORADA
+(
+  IdMorada INT PRIMARY KEY AUTO_INCREMENT,
+  Rua  VARCHAR(64) NOT NULL,
+  Numero INT NOT NULL,
+  Andar INT DEFAULT NULL, /* RES DO CHAO = 0 OU ENTAO VARCHAR(8)*/
+  Localidade VARCHAR(32) NOT NULL,
+  CodigoPostal VARCHAR(16) NOT NULL
+);
